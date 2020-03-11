@@ -1,4 +1,5 @@
 import discord
+import os
 import random
 import asyncio
 
@@ -40,4 +41,5 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('Njg3MzA5NjgxNjY4MTI4ODkx.XmkSRg.mAXZ1lGEwVGLfrfKNWt6y7rRGy0')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
